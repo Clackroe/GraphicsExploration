@@ -1,0 +1,1 @@
+/usr/bin/clang++ -g CMakeFiles/Exploration.dir/src/Log/Log.cpp.o CMakeFiles/Exploration.dir/src/main.cpp.o -o Exploration  lib/glfw/src/libglfw3.a lib/spdlog/libspdlogd.a /usr/lib/x86_64-linux-gnu/librt.a -lm -ldl /usr/lib/x86_64-linux-gnu/libX11.so

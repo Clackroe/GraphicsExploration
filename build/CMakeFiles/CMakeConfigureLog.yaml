@@ -1,0 +1,758 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/clack/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      The system is: Linux - 6.8.0-52-generic - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/clack/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/clack/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/clack/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/clang 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is Clang, found in:
+        /home/clack/dev/personal/GraphicsExploration/build/CMakeFiles/3.29.0/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/clack/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/clack/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/clack/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/clang++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is Clang, found in:
+        /home/clack/dev/personal/GraphicsExploration/build/CMakeFiles/3.29.0/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/clack/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:64 (try_compile)"
+      - "/home/clack/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:10 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/clack/dev/personal/GraphicsExploration/build/CMakeFiles/CMakeScratch/TryCompile-lllZoq"
+      binary: "/home/clack/dev/personal/GraphicsExploration/build/CMakeFiles/CMakeScratch/TryCompile-lllZoq"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/clack/dev/personal/GraphicsExploration/build/CMakeFiles/CMakeScratch/TryCompile-lllZoq'
+        
+        Run Build Command(s): /home/clack/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e8755/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_e8755.dir/build.make CMakeFiles/cmTC_e8755.dir/build
+        gmake[1]: Entering directory '/home/clack/dev/personal/GraphicsExploration/build/CMakeFiles/CMakeScratch/TryCompile-lllZoq'
+        Building C object CMakeFiles/cmTC_e8755.dir/CMakeCCompilerABI.c.o
+        /usr/bin/clang   -v -MD -MT CMakeFiles/cmTC_e8755.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_e8755.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_e8755.dir/CMakeCCompilerABI.c.o -c /home/clack/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeCCompilerABI.c
+        Ubuntu clang version 14.0.0-1ubuntu1.1
+        Target: x86_64-pc-linux-gnu
+        Thread model: posix
+        InstalledDir: /usr/bin
+        Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+        Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+        Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+        Found CUDA installation: /usr/local/cuda, version 
+         (in-process)
+         "/usr/lib/llvm-14/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/clack/dev/personal/GraphicsExploration/build/CMakeFiles/CMakeScratch/TryCompile-lllZoq -resource-dir /usr/lib/llvm-14/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_e8755.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_e8755.dir/CMakeCCompilerABI.c.o -sys-header-deps -internal-isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdebug-compilation-dir=/home/clack/dev/personal/GraphicsExploration/build/CMakeFiles/CMakeScratch/TryCompile-lllZoq -ferror-limit 19 -fgnuc-version=4.2.1 -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_e8755.dir/CMakeCCompilerABI.c.o -x c /home/clack/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeCCompilerABI.c
+        clang -cc1 version 14.0.0 based upon LLVM 14.0.0 default target x86_64-pc-linux-gnu
+        ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include"
+        ignoring nonexistent directory "/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/llvm-14/lib/clang/14.0.0/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        Linking C executable cmTC_e8755
+        /home/clack/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e8755.dir/link.txt --verbose=1
+        /usr/bin/clang  -v -Wl,-v CMakeFiles/cmTC_e8755.dir/CMakeCCompilerABI.c.o -o cmTC_e8755
+        Ubuntu clang version 14.0.0-1ubuntu1.1
+        Target: x86_64-pc-linux-gnu
+        Thread model: posix
+        InstalledDir: /usr/bin
+        Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+        Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+        Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+        Found CUDA installation: /usr/local/cuda, version 
+         "/usr/bin/ld" -pie -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_e8755 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/12 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-14/bin/../lib -L/lib -L/usr/lib -v CMakeFiles/cmTC_e8755.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtendS.o /lib/x86_64-linux-gnu/crtn.o
+        GNU ld (GNU Binutils for Ubuntu) 2.38
+        gmake[1]: Leaving directory '/home/clack/dev/personal/GraphicsExploration/build/CMakeFiles/CMakeScratch/TryCompile-lllZoq'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/clack/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:134 (message)"
+      - "/home/clack/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/llvm-14/lib/clang/14.0.0/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/llvm-14/lib/clang/14.0.0/include] ==> [/usr/lib/llvm-14/lib/clang/14.0.0/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/llvm-14/lib/clang/14.0.0/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/clack/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:170 (message)"
+      - "/home/clack/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/home/clack/dev/personal/GraphicsExploration/build/CMakeFiles/CMakeScratch/TryCompile-lllZoq']
+        ignore line: []
+        ignore line: [Run Build Command(s): /home/clack/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e8755/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_e8755.dir/build.make CMakeFiles/cmTC_e8755.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/clack/dev/personal/GraphicsExploration/build/CMakeFiles/CMakeScratch/TryCompile-lllZoq']
+        ignore line: [Building C object CMakeFiles/cmTC_e8755.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/clang   -v -MD -MT CMakeFiles/cmTC_e8755.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_e8755.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_e8755.dir/CMakeCCompilerABI.c.o -c /home/clack/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeCCompilerABI.c]
+        ignore line: [Ubuntu clang version 14.0.0-1ubuntu1.1]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/bin]
+        ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11]
+        ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12]
+        ignore line: [Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        ignore line: [Found CUDA installation: /usr/local/cuda  version ]
+        ignore line: [ (in-process)]
+        ignore line: [ "/usr/lib/llvm-14/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/clack/dev/personal/GraphicsExploration/build/CMakeFiles/CMakeScratch/TryCompile-lllZoq -resource-dir /usr/lib/llvm-14/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_e8755.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_e8755.dir/CMakeCCompilerABI.c.o -sys-header-deps -internal-isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdebug-compilation-dir=/home/clack/dev/personal/GraphicsExploration/build/CMakeFiles/CMakeScratch/TryCompile-lllZoq -ferror-limit 19 -fgnuc-version=4.2.1 -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_e8755.dir/CMakeCCompilerABI.c.o -x c /home/clack/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeCCompilerABI.c]
+        ignore line: [clang -cc1 version 14.0.0 based upon LLVM 14.0.0 default target x86_64-pc-linux-gnu]
+        ignore line: [ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include"]
+        ignore line: [ignoring nonexistent directory "/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/llvm-14/lib/clang/14.0.0/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Linking C executable cmTC_e8755]
+        ignore line: [/home/clack/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e8755.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/clang  -v -Wl -v CMakeFiles/cmTC_e8755.dir/CMakeCCompilerABI.c.o -o cmTC_e8755]
+        ignore line: [Ubuntu clang version 14.0.0-1ubuntu1.1]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/bin]
+        ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11]
+        ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12]
+        ignore line: [Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        ignore line: [Found CUDA installation: /usr/local/cuda  version ]
+        link line: [ "/usr/bin/ld" -pie -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_e8755 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/12 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-14/bin/../lib -L/lib -L/usr/lib -v CMakeFiles/cmTC_e8755.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtendS.o /lib/x86_64-linux-gnu/crtn.o]
+          arg [/usr/bin/ld] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_e8755] ==> ignore
+          arg [/lib/x86_64-linux-gnu/Scrt1.o] ==> obj [/lib/x86_64-linux-gnu/Scrt1.o]
+          arg [/lib/x86_64-linux-gnu/crti.o] ==> obj [/lib/x86_64-linux-gnu/crti.o]
+          arg [/usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtbeginS.o] ==> obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtbeginS.o]
+          arg [-L/usr/bin/../lib/gcc/x86_64-linux-gnu/12] ==> dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/12]
+          arg [-L/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../lib64] ==> dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../lib64]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/usr/lib/llvm-14/bin/../lib] ==> dir [/usr/lib/llvm-14/bin/../lib]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_e8755.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [/usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtendS.o] ==> obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtendS.o]
+          arg [/lib/x86_64-linux-gnu/crtn.o] ==> obj [/lib/x86_64-linux-gnu/crtn.o]
+        linker tool for 'C': /usr/bin/ld
+        collapse obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtbeginS.o] ==> [/usr/lib/gcc/x86_64-linux-gnu/12/crtbeginS.o]
+        collapse obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtendS.o] ==> [/usr/lib/gcc/x86_64-linux-gnu/12/crtendS.o]
+        collapse library dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/12] ==> [/usr/lib/gcc/x86_64-linux-gnu/12]
+        collapse library dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/usr/lib/llvm-14/bin/../lib] ==> [/usr/lib/llvm-14/lib]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/lib/x86_64-linux-gnu/Scrt1.o;/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/12/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/12/crtendS.o;/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/12;/usr/lib64;/lib/x86_64-linux-gnu;/lib64;/usr/lib/x86_64-linux-gnu;/usr/lib/llvm-14/lib;/lib;/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/clack/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/home/clack/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:207 (cmake_determine_linker_id)"
+      - "/home/clack/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      Running the C compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils for Ubuntu) 2.38
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/clack/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:64 (try_compile)"
+      - "/home/clack/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:10 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/clack/dev/personal/GraphicsExploration/build/CMakeFiles/CMakeScratch/TryCompile-94riFa"
+      binary: "/home/clack/dev/personal/GraphicsExploration/build/CMakeFiles/CMakeScratch/TryCompile-94riFa"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/clack/dev/personal/GraphicsExploration/build/CMakeFiles/CMakeScratch/TryCompile-94riFa'
+        
+        Run Build Command(s): /home/clack/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ec2c4/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ec2c4.dir/build.make CMakeFiles/cmTC_ec2c4.dir/build
+        gmake[1]: Entering directory '/home/clack/dev/personal/GraphicsExploration/build/CMakeFiles/CMakeScratch/TryCompile-94riFa'
+        Building CXX object CMakeFiles/cmTC_ec2c4.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/clang++   -v -MD -MT CMakeFiles/cmTC_ec2c4.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_ec2c4.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_ec2c4.dir/CMakeCXXCompilerABI.cpp.o -c /home/clack/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp
+        Ubuntu clang version 14.0.0-1ubuntu1.1
+        Target: x86_64-pc-linux-gnu
+        Thread model: posix
+        InstalledDir: /usr/bin
+        Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+        Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+        Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+        Found CUDA installation: /usr/local/cuda, version 
+         (in-process)
+         "/usr/lib/llvm-14/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/clack/dev/personal/GraphicsExploration/build/CMakeFiles/CMakeScratch/TryCompile-94riFa -resource-dir /usr/lib/llvm-14/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_ec2c4.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_ec2c4.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/x86_64-linux-gnu/c++/12 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/backward -internal-isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir=/home/clack/dev/personal/GraphicsExploration/build/CMakeFiles/CMakeScratch/TryCompile-94riFa -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_ec2c4.dir/CMakeCXXCompilerABI.cpp.o -x c++ /home/clack/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp
+        clang -cc1 version 14.0.0 based upon LLVM 14.0.0 default target x86_64-pc-linux-gnu
+        ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include"
+        ignoring nonexistent directory "/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12
+         /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/x86_64-linux-gnu/c++/12
+         /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/backward
+         /usr/lib/llvm-14/lib/clang/14.0.0/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        Linking CXX executable cmTC_ec2c4
+        /home/clack/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ec2c4.dir/link.txt --verbose=1
+        /usr/bin/clang++  -v -Wl,-v CMakeFiles/cmTC_ec2c4.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_ec2c4
+        Ubuntu clang version 14.0.0-1ubuntu1.1
+        Target: x86_64-pc-linux-gnu
+        Thread model: posix
+        InstalledDir: /usr/bin
+        Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+        Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+        Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+        Found CUDA installation: /usr/local/cuda, version 
+         "/usr/bin/ld" -pie -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_ec2c4 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/12 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-14/bin/../lib -L/lib -L/usr/lib -v CMakeFiles/cmTC_ec2c4.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtendS.o /lib/x86_64-linux-gnu/crtn.o
+        GNU ld (GNU Binutils for Ubuntu) 2.38
+        gmake[1]: Leaving directory '/home/clack/dev/personal/GraphicsExploration/build/CMakeFiles/CMakeScratch/TryCompile-94riFa'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/clack/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:134 (message)"
+      - "/home/clack/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12]
+          add: [/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/x86_64-linux-gnu/c++/12]
+          add: [/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/backward]
+          add: [/usr/lib/llvm-14/lib/clang/14.0.0/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12] ==> [/usr/include/c++/12]
+        collapse include dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/x86_64-linux-gnu/c++/12] ==> [/usr/include/x86_64-linux-gnu/c++/12]
+        collapse include dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/backward] ==> [/usr/include/c++/12/backward]
+        collapse include dir [/usr/lib/llvm-14/lib/clang/14.0.0/include] ==> [/usr/lib/llvm-14/lib/clang/14.0.0/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/include/c++/12;/usr/include/x86_64-linux-gnu/c++/12;/usr/include/c++/12/backward;/usr/lib/llvm-14/lib/clang/14.0.0/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/clack/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:170 (message)"
+      - "/home/clack/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/home/clack/dev/personal/GraphicsExploration/build/CMakeFiles/CMakeScratch/TryCompile-94riFa']
+        ignore line: []
+        ignore line: [Run Build Command(s): /home/clack/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ec2c4/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_ec2c4.dir/build.make CMakeFiles/cmTC_ec2c4.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/clack/dev/personal/GraphicsExploration/build/CMakeFiles/CMakeScratch/TryCompile-94riFa']
+        ignore line: [Building CXX object CMakeFiles/cmTC_ec2c4.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/clang++   -v -MD -MT CMakeFiles/cmTC_ec2c4.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_ec2c4.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_ec2c4.dir/CMakeCXXCompilerABI.cpp.o -c /home/clack/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Ubuntu clang version 14.0.0-1ubuntu1.1]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/bin]
+        ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11]
+        ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12]
+        ignore line: [Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        ignore line: [Found CUDA installation: /usr/local/cuda  version ]
+        ignore line: [ (in-process)]
+        ignore line: [ "/usr/lib/llvm-14/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/clack/dev/personal/GraphicsExploration/build/CMakeFiles/CMakeScratch/TryCompile-94riFa -resource-dir /usr/lib/llvm-14/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_ec2c4.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_ec2c4.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/x86_64-linux-gnu/c++/12 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/backward -internal-isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir=/home/clack/dev/personal/GraphicsExploration/build/CMakeFiles/CMakeScratch/TryCompile-94riFa -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_ec2c4.dir/CMakeCXXCompilerABI.cpp.o -x c++ /home/clack/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [clang -cc1 version 14.0.0 based upon LLVM 14.0.0 default target x86_64-pc-linux-gnu]
+        ignore line: [ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include"]
+        ignore line: [ignoring nonexistent directory "/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12]
+        ignore line: [ /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/x86_64-linux-gnu/c++/12]
+        ignore line: [ /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/backward]
+        ignore line: [ /usr/lib/llvm-14/lib/clang/14.0.0/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Linking CXX executable cmTC_ec2c4]
+        ignore line: [/home/clack/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ec2c4.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/clang++  -v -Wl -v CMakeFiles/cmTC_ec2c4.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_ec2c4]
+        ignore line: [Ubuntu clang version 14.0.0-1ubuntu1.1]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/bin]
+        ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11]
+        ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12]
+        ignore line: [Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        ignore line: [Found CUDA installation: /usr/local/cuda  version ]
+        link line: [ "/usr/bin/ld" -pie -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_ec2c4 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/12 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-14/bin/../lib -L/lib -L/usr/lib -v CMakeFiles/cmTC_ec2c4.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtendS.o /lib/x86_64-linux-gnu/crtn.o]
+          arg [/usr/bin/ld] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_ec2c4] ==> ignore
+          arg [/lib/x86_64-linux-gnu/Scrt1.o] ==> obj [/lib/x86_64-linux-gnu/Scrt1.o]
+          arg [/lib/x86_64-linux-gnu/crti.o] ==> obj [/lib/x86_64-linux-gnu/crti.o]
+          arg [/usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtbeginS.o] ==> obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtbeginS.o]
+          arg [-L/usr/bin/../lib/gcc/x86_64-linux-gnu/12] ==> dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/12]
+          arg [-L/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../lib64] ==> dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../lib64]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/usr/lib/llvm-14/bin/../lib] ==> dir [/usr/lib/llvm-14/bin/../lib]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_ec2c4.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtendS.o] ==> obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtendS.o]
+          arg [/lib/x86_64-linux-gnu/crtn.o] ==> obj [/lib/x86_64-linux-gnu/crtn.o]
+        linker tool for 'CXX': /usr/bin/ld
+        collapse obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtbeginS.o] ==> [/usr/lib/gcc/x86_64-linux-gnu/12/crtbeginS.o]
+        collapse obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtendS.o] ==> [/usr/lib/gcc/x86_64-linux-gnu/12/crtendS.o]
+        collapse library dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/12] ==> [/usr/lib/gcc/x86_64-linux-gnu/12]
+        collapse library dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/usr/lib/llvm-14/bin/../lib] ==> [/usr/lib/llvm-14/lib]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/lib/x86_64-linux-gnu/Scrt1.o;/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/12/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/12/crtendS.o;/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/12;/usr/lib64;/lib/x86_64-linux-gnu;/lib64;/usr/lib/x86_64-linux-gnu;/usr/lib/llvm-14/lib;/lib;/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/clack/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/home/clack/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:207 (cmake_determine_linker_id)"
+      - "/home/clack/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      Running the CXX compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils for Ubuntu) 2.38
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/clack/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/home/clack/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/home/clack/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/home/clack/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "lib/glfw/CMakeLists.txt:61 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/home/clack/dev/personal/GraphicsExploration/build/CMakeFiles/CMakeScratch/TryCompile-S3OfMd"
+      binary: "/home/clack/dev/personal/GraphicsExploration/build/CMakeFiles/CMakeScratch/TryCompile-S3OfMd"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/clack/dev/personal/GraphicsExploration/lib/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/home/clack/dev/personal/GraphicsExploration/build/CMakeFiles/CMakeScratch/TryCompile-S3OfMd'
+        
+        Run Build Command(s): /home/clack/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_39122/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_39122.dir/build.make CMakeFiles/cmTC_39122.dir/build
+        gmake[1]: Entering directory '/home/clack/dev/personal/GraphicsExploration/build/CMakeFiles/CMakeScratch/TryCompile-S3OfMd'
+        Building C object CMakeFiles/cmTC_39122.dir/src.c.o
+        /usr/bin/clang -DCMAKE_HAVE_LIBC_PTHREAD   -MD -MT CMakeFiles/cmTC_39122.dir/src.c.o -MF CMakeFiles/cmTC_39122.dir/src.c.o.d -o CMakeFiles/cmTC_39122.dir/src.c.o -c /home/clack/dev/personal/GraphicsExploration/build/CMakeFiles/CMakeScratch/TryCompile-S3OfMd/src.c
+        Linking C executable cmTC_39122
+        /home/clack/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_39122.dir/link.txt --verbose=1
+        /usr/bin/clang CMakeFiles/cmTC_39122.dir/src.c.o -o cmTC_39122
+        gmake[1]: Leaving directory '/home/clack/dev/personal/GraphicsExploration/build/CMakeFiles/CMakeScratch/TryCompile-S3OfMd'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/clack/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "/home/clack/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/FindX11.cmake:693 (check_library_exists)"
+      - "lib/glfw/CMakeLists.txt:211 (find_package)"
+    checks:
+      - "Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so"
+    directories:
+      source: "/home/clack/dev/personal/GraphicsExploration/build/CMakeFiles/CMakeScratch/TryCompile-GBhfFp"
+      binary: "/home/clack/dev/personal/GraphicsExploration/build/CMakeFiles/CMakeScratch/TryCompile-GBhfFp"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/clack/dev/personal/GraphicsExploration/lib/glfw/CMake/modules"
+    buildResult:
+      variable: "X11_LIB_X11_SOLO"
+      cached: true
+      stdout: |
+        Change Dir: '/home/clack/dev/personal/GraphicsExploration/build/CMakeFiles/CMakeScratch/TryCompile-GBhfFp'
+        
+        Run Build Command(s): /home/clack/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5f08b/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_5f08b.dir/build.make CMakeFiles/cmTC_5f08b.dir/build
+        gmake[1]: Entering directory '/home/clack/dev/personal/GraphicsExploration/build/CMakeFiles/CMakeScratch/TryCompile-GBhfFp'
+        Building C object CMakeFiles/cmTC_5f08b.dir/CheckFunctionExists.c.o
+        /usr/bin/clang   -DCHECK_FUNCTION_EXISTS=XOpenDisplay -MD -MT CMakeFiles/cmTC_5f08b.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_5f08b.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_5f08b.dir/CheckFunctionExists.c.o -c /home/clack/dev/personal/GraphicsExploration/build/CMakeFiles/CMakeScratch/TryCompile-GBhfFp/CheckFunctionExists.c
+        Linking C executable cmTC_5f08b
+        /home/clack/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5f08b.dir/link.txt --verbose=1
+        /usr/bin/clang  -DCHECK_FUNCTION_EXISTS=XOpenDisplay CMakeFiles/cmTC_5f08b.dir/CheckFunctionExists.c.o -o cmTC_5f08b  /usr/lib/x86_64-linux-gnu/libX11.so /usr/lib/x86_64-linux-gnu/libXext.so
+        gmake[1]: Leaving directory '/home/clack/dev/personal/GraphicsExploration/build/CMakeFiles/CMakeScratch/TryCompile-GBhfFp'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/clack/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "/home/clack/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/FindX11.cmake:708 (check_function_exists)"
+      - "lib/glfw/CMakeLists.txt:211 (find_package)"
+    checks:
+      - "Looking for gethostbyname"
+    directories:
+      source: "/home/clack/dev/personal/GraphicsExploration/build/CMakeFiles/CMakeScratch/TryCompile-TGWiQt"
+      binary: "/home/clack/dev/personal/GraphicsExploration/build/CMakeFiles/CMakeScratch/TryCompile-TGWiQt"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/clack/dev/personal/GraphicsExploration/lib/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_GETHOSTBYNAME"
+      cached: true
+      stdout: |
+        Change Dir: '/home/clack/dev/personal/GraphicsExploration/build/CMakeFiles/CMakeScratch/TryCompile-TGWiQt'
+        
+        Run Build Command(s): /home/clack/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_93287/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_93287.dir/build.make CMakeFiles/cmTC_93287.dir/build
+        gmake[1]: Entering directory '/home/clack/dev/personal/GraphicsExploration/build/CMakeFiles/CMakeScratch/TryCompile-TGWiQt'
+        Building C object CMakeFiles/cmTC_93287.dir/CheckFunctionExists.c.o
+        /usr/bin/clang   -DCHECK_FUNCTION_EXISTS=gethostbyname -MD -MT CMakeFiles/cmTC_93287.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_93287.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_93287.dir/CheckFunctionExists.c.o -c /home/clack/dev/personal/GraphicsExploration/build/CMakeFiles/CMakeScratch/TryCompile-TGWiQt/CheckFunctionExists.c
+        Linking C executable cmTC_93287
+        /home/clack/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_93287.dir/link.txt --verbose=1
+        /usr/bin/clang  -DCHECK_FUNCTION_EXISTS=gethostbyname CMakeFiles/cmTC_93287.dir/CheckFunctionExists.c.o -o cmTC_93287
+        gmake[1]: Leaving directory '/home/clack/dev/personal/GraphicsExploration/build/CMakeFiles/CMakeScratch/TryCompile-TGWiQt'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/clack/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "/home/clack/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/FindX11.cmake:722 (check_function_exists)"
+      - "lib/glfw/CMakeLists.txt:211 (find_package)"
+    checks:
+      - "Looking for connect"
+    directories:
+      source: "/home/clack/dev/personal/GraphicsExploration/build/CMakeFiles/CMakeScratch/TryCompile-Tpi6EC"
+      binary: "/home/clack/dev/personal/GraphicsExploration/build/CMakeFiles/CMakeScratch/TryCompile-Tpi6EC"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/clack/dev/personal/GraphicsExploration/lib/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_CONNECT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/clack/dev/personal/GraphicsExploration/build/CMakeFiles/CMakeScratch/TryCompile-Tpi6EC'
+        
+        Run Build Command(s): /home/clack/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c616e/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_c616e.dir/build.make CMakeFiles/cmTC_c616e.dir/build
+        gmake[1]: Entering directory '/home/clack/dev/personal/GraphicsExploration/build/CMakeFiles/CMakeScratch/TryCompile-Tpi6EC'
+        Building C object CMakeFiles/cmTC_c616e.dir/CheckFunctionExists.c.o
+        /usr/bin/clang   -DCHECK_FUNCTION_EXISTS=connect -MD -MT CMakeFiles/cmTC_c616e.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_c616e.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_c616e.dir/CheckFunctionExists.c.o -c /home/clack/dev/personal/GraphicsExploration/build/CMakeFiles/CMakeScratch/TryCompile-Tpi6EC/CheckFunctionExists.c
+        Linking C executable cmTC_c616e
+        /home/clack/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c616e.dir/link.txt --verbose=1
+        /usr/bin/clang  -DCHECK_FUNCTION_EXISTS=connect CMakeFiles/cmTC_c616e.dir/CheckFunctionExists.c.o -o cmTC_c616e
+        gmake[1]: Leaving directory '/home/clack/dev/personal/GraphicsExploration/build/CMakeFiles/CMakeScratch/TryCompile-Tpi6EC'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/clack/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "/home/clack/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/FindX11.cmake:731 (check_function_exists)"
+      - "lib/glfw/CMakeLists.txt:211 (find_package)"
+    checks:
+      - "Looking for remove"
+    directories:
+      source: "/home/clack/dev/personal/GraphicsExploration/build/CMakeFiles/CMakeScratch/TryCompile-qztEtU"
+      binary: "/home/clack/dev/personal/GraphicsExploration/build/CMakeFiles/CMakeScratch/TryCompile-qztEtU"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/clack/dev/personal/GraphicsExploration/lib/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_REMOVE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/clack/dev/personal/GraphicsExploration/build/CMakeFiles/CMakeScratch/TryCompile-qztEtU'
+        
+        Run Build Command(s): /home/clack/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ab565/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ab565.dir/build.make CMakeFiles/cmTC_ab565.dir/build
+        gmake[1]: Entering directory '/home/clack/dev/personal/GraphicsExploration/build/CMakeFiles/CMakeScratch/TryCompile-qztEtU'
+        Building C object CMakeFiles/cmTC_ab565.dir/CheckFunctionExists.c.o
+        /usr/bin/clang   -DCHECK_FUNCTION_EXISTS=remove -MD -MT CMakeFiles/cmTC_ab565.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_ab565.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_ab565.dir/CheckFunctionExists.c.o -c /home/clack/dev/personal/GraphicsExploration/build/CMakeFiles/CMakeScratch/TryCompile-qztEtU/CheckFunctionExists.c
+        Linking C executable cmTC_ab565
+        /home/clack/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ab565.dir/link.txt --verbose=1
+        /usr/bin/clang  -DCHECK_FUNCTION_EXISTS=remove CMakeFiles/cmTC_ab565.dir/CheckFunctionExists.c.o -o cmTC_ab565
+        gmake[1]: Leaving directory '/home/clack/dev/personal/GraphicsExploration/build/CMakeFiles/CMakeScratch/TryCompile-qztEtU'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/clack/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "/home/clack/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/FindX11.cmake:740 (check_function_exists)"
+      - "lib/glfw/CMakeLists.txt:211 (find_package)"
+    checks:
+      - "Looking for shmat"
+    directories:
+      source: "/home/clack/dev/personal/GraphicsExploration/build/CMakeFiles/CMakeScratch/TryCompile-oeIFcv"
+      binary: "/home/clack/dev/personal/GraphicsExploration/build/CMakeFiles/CMakeScratch/TryCompile-oeIFcv"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/clack/dev/personal/GraphicsExploration/lib/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_SHMAT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/clack/dev/personal/GraphicsExploration/build/CMakeFiles/CMakeScratch/TryCompile-oeIFcv'
+        
+        Run Build Command(s): /home/clack/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ccea9/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ccea9.dir/build.make CMakeFiles/cmTC_ccea9.dir/build
+        gmake[1]: Entering directory '/home/clack/dev/personal/GraphicsExploration/build/CMakeFiles/CMakeScratch/TryCompile-oeIFcv'
+        Building C object CMakeFiles/cmTC_ccea9.dir/CheckFunctionExists.c.o
+        /usr/bin/clang   -DCHECK_FUNCTION_EXISTS=shmat -MD -MT CMakeFiles/cmTC_ccea9.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_ccea9.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_ccea9.dir/CheckFunctionExists.c.o -c /home/clack/dev/personal/GraphicsExploration/build/CMakeFiles/CMakeScratch/TryCompile-oeIFcv/CheckFunctionExists.c
+        Linking C executable cmTC_ccea9
+        /home/clack/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ccea9.dir/link.txt --verbose=1
+        /usr/bin/clang  -DCHECK_FUNCTION_EXISTS=shmat CMakeFiles/cmTC_ccea9.dir/CheckFunctionExists.c.o -o cmTC_ccea9
+        gmake[1]: Leaving directory '/home/clack/dev/personal/GraphicsExploration/build/CMakeFiles/CMakeScratch/TryCompile-oeIFcv'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/clack/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "/home/clack/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/FindX11.cmake:750 (check_library_exists)"
+      - "lib/glfw/CMakeLists.txt:211 (find_package)"
+    checks:
+      - "Looking for IceConnectionNumber in ICE"
+    directories:
+      source: "/home/clack/dev/personal/GraphicsExploration/build/CMakeFiles/CMakeScratch/TryCompile-debEA4"
+      binary: "/home/clack/dev/personal/GraphicsExploration/build/CMakeFiles/CMakeScratch/TryCompile-debEA4"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/clack/dev/personal/GraphicsExploration/lib/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_LIB_ICE_HAS_ICECONNECTIONNUMBER"
+      cached: true
+      stdout: |
+        Change Dir: '/home/clack/dev/personal/GraphicsExploration/build/CMakeFiles/CMakeScratch/TryCompile-debEA4'
+        
+        Run Build Command(s): /home/clack/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_71b4e/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_71b4e.dir/build.make CMakeFiles/cmTC_71b4e.dir/build
+        gmake[1]: Entering directory '/home/clack/dev/personal/GraphicsExploration/build/CMakeFiles/CMakeScratch/TryCompile-debEA4'
+        Building C object CMakeFiles/cmTC_71b4e.dir/CheckFunctionExists.c.o
+        /usr/bin/clang   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber -MD -MT CMakeFiles/cmTC_71b4e.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_71b4e.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_71b4e.dir/CheckFunctionExists.c.o -c /home/clack/dev/personal/GraphicsExploration/build/CMakeFiles/CMakeScratch/TryCompile-debEA4/CheckFunctionExists.c
+        Linking C executable cmTC_71b4e
+        /home/clack/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_71b4e.dir/link.txt --verbose=1
+        /usr/bin/clang  -DCHECK_FUNCTION_EXISTS=IceConnectionNumber CMakeFiles/cmTC_71b4e.dir/CheckFunctionExists.c.o -o cmTC_71b4e  -lICE
+        gmake[1]: Leaving directory '/home/clack/dev/personal/GraphicsExploration/build/CMakeFiles/CMakeScratch/TryCompile-debEA4'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/clack/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "/home/clack/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "lib/spdlog/CMakeLists.txt:250 (check_symbol_exists)"
+    checks:
+      - "Looking for fwrite_unlocked"
+    directories:
+      source: "/home/clack/dev/personal/GraphicsExploration/build/CMakeFiles/CMakeScratch/TryCompile-CeBzwq"
+      binary: "/home/clack/dev/personal/GraphicsExploration/build/CMakeFiles/CMakeScratch/TryCompile-CeBzwq"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_FWRITE_UNLOCKED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/clack/dev/personal/GraphicsExploration/build/CMakeFiles/CMakeScratch/TryCompile-CeBzwq'
+        
+        Run Build Command(s): /home/clack/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_2154b/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_2154b.dir/build.make CMakeFiles/cmTC_2154b.dir/build
+        gmake[1]: Entering directory '/home/clack/dev/personal/GraphicsExploration/build/CMakeFiles/CMakeScratch/TryCompile-CeBzwq'
+        Building C object CMakeFiles/cmTC_2154b.dir/CheckSymbolExists.c.o
+        /usr/bin/clang    -MD -MT CMakeFiles/cmTC_2154b.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_2154b.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_2154b.dir/CheckSymbolExists.c.o -c /home/clack/dev/personal/GraphicsExploration/build/CMakeFiles/CMakeScratch/TryCompile-CeBzwq/CheckSymbolExists.c
+        Linking C executable cmTC_2154b
+        /home/clack/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2154b.dir/link.txt --verbose=1
+        /usr/bin/clang CMakeFiles/cmTC_2154b.dir/CheckSymbolExists.c.o -o cmTC_2154b
+        gmake[1]: Leaving directory '/home/clack/dev/personal/GraphicsExploration/build/CMakeFiles/CMakeScratch/TryCompile-CeBzwq'
+        
+      exitCode: 0
+...

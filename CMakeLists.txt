@@ -31,7 +31,7 @@ include_directories(lib/glfw/include)
 set_target_properties(glfw PROPERTIES POSITION_INDEPENDENT_CODE ON)
 
 # GLM
-include_directories(lib/GLM)
+include_directories(lib/glm)
 
 # SPDLOG
 add_subdirectory(lib/spdlog)

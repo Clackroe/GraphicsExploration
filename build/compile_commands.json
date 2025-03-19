@@ -1,0 +1,21 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/clang++",
+      "-DSPDLOG_COMPILED_LIB",
+      "-I/home/clack/dev/personal/GraphicsExploration/src",
+      "-I/home/clack/dev/personal/GraphicsExploration/lib/glfw/include",
+      "-I/home/clack/dev/personal/GraphicsExploration/lib/glm",
+      "-I/home/clack/dev/personal/GraphicsExploration/lib/spdlog/include",
+      "-g",
+      "-std=gnu++20",
+      "-c",
+      "-o",
+      "CMakeFiles/Exploration.dir/src/main.cpp.o",
+      "/home/clack/dev/personal/GraphicsExploration/src/main.cpp"
+    ],
+    "directory": "/home/clack/dev/personal/GraphicsExploration/build",
+    "file": "/home/clack/dev/personal/GraphicsExploration/src/main.cpp",
+    "output": "/home/clack/dev/personal/GraphicsExploration/build/CMakeFiles/Exploration.dir/src/main.cpp.o"
+  }
+]
